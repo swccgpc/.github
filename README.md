@@ -32,3 +32,25 @@
 
 ![](pix/swccg_ec2_websites.png)
 
+
+
+
+
+
+# Git
+
+## Branch Naming
+
+* The Trunk branches should always be named `main`.
+* The one exception to that is with `holotable` where the client code has a hard requirement on the name `master`. Once the client code can be updated to support `main` instead of `master` the git repo trunk branch will be renamed.
+
+## Contributing code
+
+* Always fork the code base, create a new branch, and create a pull request from the fork.
+* Never pull and push from the primary repo.
+* Never create short lived branches on the primary repo.
+
+
+
+
+
