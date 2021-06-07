@@ -6,7 +6,7 @@
 * **GitHub Actions** automate upload from various Git repos to `res`.
 * Terraform controls the creation of infrastructure within AWS.
 
-![](pix/swccg_git_repos.png)
+![SWCCG Git Repos List](pix/swccg_git_repos.png)
 
 
 
@@ -17,9 +17,10 @@
 * Static websites are hosted on Amazon S3.
 * Amazon S3 is fronted by Amazon CloudFront.
 * SSL Certificates are generated, *automatically*, use Amazon Certificate Manager *(ACM)*.
-* `res.starwarsccg.org` stands for **resources**. The resources (res) are used by other sites, such as scomp, vkit, www, and gemp.
+* `res.starwarsccg.org` stands for **resources**. The resources _(res)_ are used by other sites, such as scomp, vkit, www, and gemp.
+* All S3+Cloudfront hosted websites are deployed automatically using GitHub Actions.
 
-![](pix/swccg_cloudfront_s3_websites.png)
+![SWCCG S3 with CloudFront hosted Websites](pix/swccg_cloudfront_s3_websites.png)
 
 
 
@@ -28,9 +29,11 @@
 ## EC2 Websites
 
 * Web applications that are not static and require an application server to operate, such as PHP or Java, run on top of Amazon EC2 instances.
+* The ALB is protected by an Amazon WAF.
 * The database backends are hosted in Amazon RDS _(relational database service)_.
+* The **Decks** website is hosted on EC2 while it is under development.<br />Decks is a NodeJS based application with DynamoDB as a backend.<br />_Eventually Decks will be hosted on AWS Lambda._
 
-![](pix/swccg_ec2_websites.png)
+![SWCCG EC2 hosted Websites](pix/swccg_ec2_websites.png)
 
 
 
