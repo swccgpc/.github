@@ -39,6 +39,16 @@
 
 
 
+## ECS Hosted
+
+* Containers are run on top of **ECS** _(Elastic Container Service)_ **Fargate**.
+* The **Discord Card Linker** app is a compiled .NET application that is bundled as a container and pushed to ECR _(Elastic Container Registry)_. Images are pulled from ECR and deployed to ECS Fargate.
+
+![SWCCG ECS hosted](pix/swccg_ecs_hosted.png)
+
+
+
+
 
 # Git
 
