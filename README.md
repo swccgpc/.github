@@ -1,5 +1,16 @@
 
 
+## Sources of Truth
+
+* With the power of **GitHub Actions**, many different services are powered by upstream sources of truth.
+* When the upstream sources are updated, the downstream services are automatically updated.
+* For example, when you update the images in the `holotable` repo, the images are updated in `scomp`, `holotable.exe`, and `gemp`.
+
+![](pix/swccg_how_it_all_fits_together.png)
+
+
+
+
 ## SWCCG Git Repos
 
 * The **resources** *(res)* s3 bucket hosts many assets used by many sites, such as scomp, vkit, www, and gemp.
