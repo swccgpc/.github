@@ -6,7 +6,7 @@
 * When the upstream sources are updated, the downstream services are automatically updated.
 * For example, when you update the images in the `holotable` repo, the images are updated in `scomp`, `holotable.exe`, and `gemp`.
 
-![](pix/swccg_how_it_all_fits_together.png)
+![](profile/pix/swccg_how_it_all_fits_together.png)
 
 
 
@@ -17,7 +17,7 @@
 * **GitHub Actions** automate upload from various Git repos to `res`.
 * Terraform controls the creation of infrastructure within AWS.
 
-![SWCCG Git Repos List](pix/swccg_git_repos.png)
+![SWCCG Git Repos List](profile/pix/swccg_git_repos.png)
 
 
 
@@ -31,7 +31,7 @@
 * `res.starwarsccg.org` stands for **resources**. The resources _(res)_ are used by other sites, such as scomp, vkit, www, and gemp.
 * All S3+Cloudfront hosted websites are deployed automatically using GitHub Actions.
 
-![SWCCG S3 with CloudFront hosted Websites](pix/swccg_cloudfront_s3_websites.png)
+![SWCCG S3 with CloudFront hosted Websites](profile/pix/swccg_cloudfront_s3_websites.png)
 
 
 
@@ -44,7 +44,7 @@
 * The database backends are hosted in Amazon RDS _(relational database service)_.
 * The **Decks** website is hosted on EC2 while it is under development.<br />Decks is a NodeJS based application with DynamoDB as a backend.<br />_Eventually Decks will be hosted on AWS Lambda._
 
-![SWCCG EC2 hosted Websites](pix/swccg_ec2_websites.png)
+![SWCCG EC2 hosted Websites](profile/pix/swccg_ec2_websites.png)
 
 
 
@@ -55,7 +55,7 @@
 * Containers are run on top of **ECS** _(Elastic Container Service)_ **Fargate**.
 * The **Discord Card Linker** app is a compiled .NET application that is bundled as a container and pushed to ECR _(Elastic Container Registry)_. Images are pulled from ECR and deployed to ECS Fargate.
 
-![SWCCG ECS hosted](pix/swccg_ecs_hosted.png)
+![SWCCG ECS hosted](profile/pix/swccg_ecs_hosted.png)
 
 
 
