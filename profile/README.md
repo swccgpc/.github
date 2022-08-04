@@ -1,3 +1,4 @@
+![swccgpc](https://avatars.githubusercontent.com/u/25210454?s=400&u=1229012b26afaaeac7df52bf673c5372d04fa9c0&v=4)
 
 
 ## Sources of Truth
